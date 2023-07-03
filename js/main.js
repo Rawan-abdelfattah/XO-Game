@@ -15,41 +15,36 @@ function number(num1,num2,num3){
 function winner(){
     for(let i=1;i<10;i++){
         elementarray[i]=document.getElementById('index'+i).innerHTML;
-        // console.log(elementarray)
     }
     if(elementarray[1]==elementarray[2]&&elementarray[2]==elementarray[3] &&elementarray[1]!=''){
-        
         number(1,2,3);
     }
     else if(elementarray[4]==elementarray[5]&&elementarray[5]==elementarray[6] &&elementarray[4]!=''){
-
         number(4,5,6);
-
     }
     else if(elementarray[7]==elementarray[8]&&elementarray[8]==elementarray[9] &&elementarray[7]!=''){
         number(7,8,9);
-
     }
     else if(elementarray[1]==elementarray[4]&&elementarray[4]==elementarray[7] &&elementarray[1]!=''){
         number(1,4,7);
-
     }
     else if(elementarray[2]==elementarray[5]&&elementarray[5]==elementarray[8] &&elementarray[2]!=''){
         number(2,5,8);
-
     }
     else if(elementarray[3]==elementarray[6]&&elementarray[6]==elementarray[9] &&elementarray[3]!=''){
         number(3,6,9);
-
     }
-
     else if(elementarray[1]==elementarray[5]&&elementarray[5]==elementarray[9] &&elementarray[1]!=''){
         number(1,5,9);
-
     }
     else if(elementarray[3]==elementarray[5]&&elementarray[5]==elementarray[7] &&elementarray[3]!=''){
         number(3,5,7);
-
+    }
+    else if(!elementarray.includes('')){
+        // All elements are filled and no winner
+        title.innerHTML = "No Winner";
+        setInterval(function(){title.innerHTML+='.'},1000);
+        setTimeout(function(){location.reload()}, 2000);
     }
 }
 
