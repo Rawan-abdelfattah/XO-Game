@@ -17,7 +17,7 @@ body{
     text-align: center;
 
     cursor: pointer;
-    font-size: 130px;
+    font-size: 70px;
     height: 170px;
 }
 .text:hover{
@@ -29,7 +29,7 @@ body{
     /* border: 5px solid rgba(186, 93, 93, 0.452); */
     cursor: pointer;
 }
-.title h1{
+.title {
     font-weight: bold; 
-    font-size: 70px;
+    /* font-size: 70px; */
 }
