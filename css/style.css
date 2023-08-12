@@ -42,7 +42,7 @@ body{
     height: 90px;
 }
 
-@media screen and (min-width:1200px) {
+@media screen  and (min-width:975px) {
 
     .container{
         width: 25%;
