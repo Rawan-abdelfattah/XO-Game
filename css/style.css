@@ -36,12 +36,22 @@ body{
 
 .container{
     width: 95%;
+    height: 450px;
+}
+.text{
+    height: 90px;
 }
 
 @media screen and (min-width:1200px) {
 
     .container{
         width: 25%;
+        height: 520px;
+       
+
+    }
+    .text{
+        height: 110px;
     }
     
 }
